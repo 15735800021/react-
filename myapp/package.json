@@ -1,6 +1,7 @@
 {
   "name": "myapp",
   "version": "0.1.0",
+  "homepage": "https://15735800021.github.io/react-/tree/master/myapp",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
@@ -15,7 +16,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
-  "proxy": "http://192.168.50.197:8080/api"
+  "proxy": "http://192.168.50.197:8080/api",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
